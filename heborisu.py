@@ -83,7 +83,6 @@ def run_game():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 return
-
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_LEFT:
                     tetrimino.move(-1, 0)
@@ -111,7 +110,7 @@ def run_game():
 
         tetrimino.draw()
         pygame.display.flip()
-        clock.tick(5)
+        clock.tick(3)
 
 # ゲームの実行
 run_game()
